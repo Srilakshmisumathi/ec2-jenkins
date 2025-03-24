@@ -5,7 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Database Configuration (PostgreSQL)
-DB_HOST = "database-1.cn46ece8sslh.ap-south-1.rds.amazonaws.com"
+DB_HOST = "database-2.cn46ece8sslh.ap-south-1.rds.amazonaws.com"
 DB_NAME = "postgres"
 DB_USER = "postgres"
 DB_PASSWORD = "postgresql1234"
