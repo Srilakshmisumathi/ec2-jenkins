@@ -4,7 +4,7 @@ import os
 from werkzeug.utils import secure_filename
 from datetime import datetime
 
-app = Flask(_name_)
+app = Flask(__name__)  
 
 # Database Configuration (PostgreSQL on EC2/RDS)
 DB_HOST = "database-2.cn46ece8sslh.ap-south-1.rds.amazonaws.com"  # Update with EC2 or RDS endpoint
