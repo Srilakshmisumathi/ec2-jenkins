@@ -1,2 +1,4 @@
 Flask==2.3.3
+psycopg2-binary==2.9.7  # For PostgreSQL connection
+boto3==1.24.10           # For S3 integration
 
