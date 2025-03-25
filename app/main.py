@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 import psycopg2
 import os
 from werkzeug.utils import secure_filename
@@ -22,7 +22,7 @@ def get_db_connection():
     )
 
 # Set upload folder
-UPLOAD_FOLDER = "/home/ubuntu/uploads"  # Use an absolute path in EC2
+UPLOAD_FOLDER = "/home/ubuntu/uploads"  # Use absolute path in EC2
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -64,4 +64,10 @@ def submit():
     return render_template('success.html', name=name, image_path=image_path)
 
 if __name__ == "__main__":  # ✅ Fixed NameError
-    app.run(host="0.0.0.0", port=5000)  # Run Flask on EC2
+    app.run(host="0.0.0.0", port=5003)  # Run Flask on EC2
+
+
+
+    
+
+
