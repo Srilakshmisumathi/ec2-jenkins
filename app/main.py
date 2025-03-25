@@ -4,7 +4,7 @@ import os
 from werkzeug.utils import secure_filename
 from datetime import datetime
 
-app = Flask(_name_)
+app = Flask(_main_)
 
 # Database Configuration (Assuming PostgreSQL is running inside Docker)
 DB_HOST = "database-2.cn46ece8sslh.ap-south-1.rds.amazonaws.com"  # Update if using Docker container name or IP
